@@ -1,0 +1,98 @@
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket</title>
+</head>
+<body>
+
+    <!-- Main Heading of the Page -->
+    <h1>Online Movie Ticket Booking System</h1>
+
+    <!-- Form Start: action="#" means stay on same page, method="post" means send data securely -->
+    <form action="#" method="post">
+
+        <!-- Section 1: Personal Information -->
+        <h2>Personal Information</h2>
+
+        <!-- Full Name: type="text" accepts normal text input -->
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+
+        <!-- Email: type="email" automatically checks for valid email format -->
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required><br><br>
+
+        <!-- Phone: type="tel" is used for telephone number input -->
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br><br>
+
+
+        <!-- Section 2: Movie Details -->
+        <h2>Movie Details</h2>
+
+        <!-- Dropdown to select a movie from the list -->
+        <label for="movie">Select Movie:</label><br>
+        <select id="movie" name="movie" required>
+            <option value="">-- Select a Movie --</option>
+            <option value="avengers">Avengers</option>
+            <option value="spiderman">Spider-Man: No Way Home</option>
+            <option value="to_good_to_be_true">To Good To Be True</option>
+            <option value="joker">Joker: Folie a Deux</option>
+            <option value="dune">Dune: Part Three</option>
+        </select><br><br>
+
+        <!-- Date: type="date" shows a calendar picker -->
+        <label for="date">Select Date:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <!-- Dropdown to select the show time -->
+        <label for="showtime">Select Show Time:</label><br>
+        <select id="showtime" name="showtime" required>
+            <option value="">-- Select Show Time --</option>
+            <option value="10:00">10:00 AM</option>
+            <option value="13:00">01:00 PM</option>
+            <option value="16:00">04:00 PM</option>
+            <option value="19:00">07:00 PM</option>
+            <option value="22:00">10:00 PM</option>
+        </select><br><br>
+
+        <!-- Number: type="number" with min=1 and max=10 to limit ticket count -->
+        <label for="tickets">Number of Tickets:</label><br>
+        <input type="number" id="tickets" name="tickets" min="1" max="10" placeholder="Enter number of tickets" required><br><br>
+
+
+        <!-- Section 3: Seat Type using Radio Buttons (only one can be selected) -->
+        <h2>Seat Type</h2>
+
+        <!-- Radio buttons share the same name="seattype" so only one can be chosen -->
+        <input type="radio" id="regular" name="seattype" value="regular" required>
+        <label for="regular">Regular</label><br>
+
+        <input type="radio" id="vip" name="seattype" value="vip">
+        <label for="vip">VIP</label><br>
+
+        <input type="radio" id="premium" name="seattype" value="premium">
+        <label for="premium">Premium</label><br><br>
+
+
+        <!-- Section 4: Food Options using Checkboxes (multiple can be selected) -->
+        <h2>Food Options</h2>
+
+        <!-- Each checkbox is independent so user can select more than one -->
+        <input type="checkbox" id="popcorn" name="food" value="popcorn">
+        <label for="popcorn">Popcorn</label><br>
+
+        <input type="checkbox" id="colddrink" name="food" value="colddrink">
+        <label for="colddrink">Cold Drink</label><br>
+
+        <input type="checkbox" id="nachos" name="food" value="nachos">
+        <label for="nachos">Nachos</label><br><br>
+
+
+        <!-- Section 5:
+</body>
+</html>
