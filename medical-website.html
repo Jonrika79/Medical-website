@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MediCare Hospital</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Arial,sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+header{
+    background:#0b3c5d;
+    color:white;
+    padding:15px 5%;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.btn{
+    background:#14b8a6;
+    color:white;
+    padding:10px 20px;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+.hero{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    padding:80px 5%;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:48px;
+    color:#0b3c5d;
+    margin-bottom:15px;
+}
+
+.hero-image{
+    background:#dbeafe;
+    height:350px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px;
+}
+
+section{
+    padding:60px 5%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:30px;
+    color:#0b3c5d;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    transition:.3s;
+}
+
+.doctor-img{
+    width:100px;
+    height:100px;
+    background:#ddd;
+    border-radius:50%;
+    margin:auto;
+    margin-bottom:10px;
+}
+
+form{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+textarea{
+    grid-column:span 2;
+}
+
+button{
+    background:#14b8a6;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.table-container{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th,td{
+    padding:12px;
+    border:1px solid #ddd;
+}
+
+th{
+    background:#0b3c5d;
+    color:white;
+}
+
+.completed{
+    color:green;
+    font-weight:bold;
+}
+
+.pending{
+    color:orange;
+    font-weight:bold;
+}
+
+.contact{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.map{
+    background:#dbeafe;
+    height:250px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+footer{
+    background:#111827;
+    color:white;
+    padding:40px 5%;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.footer-grid ul{
+    list-style:none;
+}
+
+.footer-grid a{
+    color:#ddd;
+    text-decoration:none;
+}
+
+.copy{
+    text-align:center;
+    margin-top:20px;
+}
+
+@media(max-width:768px){
+
+.hero,
+.contact,
+.form-grid{
+    grid-template-columns:1fr;
+}
+
+textarea{
+    grid-column:span 1;
+}
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:32px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo">MediCare+</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Doctors</a></li>
+<li><a href="#">Departments</a></li>
+<li><a href="#">Appointment</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+<a href="#" class="btn">Emergency Call</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Your Health, Our Priority</h1>
+<p>Providing trusted healthcare services with expert doctors and modern medical facilities.</p>
+<br>
+<a href="#" class="btn">Book Appointment</a>
+</div>
+
+<div class="hero-image">
+Medical Image Placeholder
+</div>
+</section>
+
+<section>
+<h2 class="title">About Us</h2>
+<div class="grid">
+<div class="card">
+<h3>Mission</h3>
+<p>Deliver quality healthcare services with compassion and excellence.</p>
+</div>
+
+<div class="card">
+<h3>Why Choose Us?</h3>
+<ul>
+<li>24/7 Emergency Care</li>
+<li>Certified Specialists</li>
+<li>Advanced Equipment</li>
+<li>Patient-Centered Care</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section>
+<h2 class="title">Services</h2>
+
+<div class="grid">
+<div class="card"><h3>Cardiology</h3></div>
+<div class="card"><h3>Pediatrics</h3></div>
+<div class="card"><h3>Neurology</h3></div>
+<div class="card"><h3>Orthopedics</h3></div>
+</div>
+</section>
+
+<section>
+<h2 class="title">Doctors</h2>
+
+<div class="grid">
+<div class="card">
+<div class="doctor-img"></div>
+<h3>Dr. Sarah Wilson</h3>
+<p>Cardiologist</p>
+</div>
+
+<div class="card">
+<div class="doctor-img"></div>
+<h3>Dr. Michael Brown</h3>
+<p>Neurologist</p>
+</div>
+
+<div class="card">
+<div class="doctor-img"></div>
+<h3>Dr. Emily Davis</h3>
+<p>Pediatrician</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2 class="title">Departments</h2>
+
+<div class="grid">
+<div class="card">Emergency Care</div>
+<div class="card">Diagnostic Lab</div>
+<div class="card">Pharmacy</div>
+<div class="card">ICU</div>
+</div>
+</section>
+
+<section>
+<h2 class="title">Book Appointment</h2>
+
+<form>
+<div class="form-grid">
+<input type="text" placeholder="Full Name">
+<input type="email" placeholder="Email">
+
+<input type="tel" placeholder="Phone Number">
+
+<select>
+<option>Select Department</option>
+<option>Cardiology</option>
+<option>Neurology</option>
+</select>
+
+<input type="date">
+
+<select>
+<option>Select Doctor</option>
+<option>Dr. Sarah Wilson</option>
+<option>Dr. Michael Brown</option>
+</select>
+
+<textarea rows="5" placeholder="Message"></textarea>
+</div>
+
+<br>
+<button type="submit">Book Appointment</button>
+</form>
+</section>
+
+<section>
+<h2 class="title">Patient Records</h2>
+
+<div class="table-container">
+<table>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Department</th>
+<th>Date</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>P001</td>
+<td>John Smith</td>
+<td>Cardiology</td>
+<td>24/06/2026</td>
+<td class="completed">Completed</td>
+</tr>
+
+<tr>
+<td>P002</td>
+<td>Emma Johnson</td>
+<td>Neurology</td>
+<td>25/06/2026</td>
+<td class="pending">Pending</td>
+</tr>
+</table>
+</div>
+</section>
+
+<section>
+<h2 class="title">Testimonials</h2>
+
+<div class="grid">
+<div class="card">
+<p>"Excellent healthcare services and professional doctors."</p>
+<br>
+★★★★★
+</div>
+
+<div class="card">
+<p>"Modern facilities and friendly staff."</p>
+<br>
+★★★★★
+</div>
+
+<div class="card">
+<p>"Highly recommended hospital."</p>
+<br>
+★★★★★
+</div>
+</div>
+</section>
+
+<section>
+<h2 class="title">Contact Us</h2>
+
+<div class="contact">
+
+<div class="card">
+<p><strong>Address:</strong> Kathmandu, Nepal</p>
+<p><strong>Phone:</strong> +977-9800000000</p>
+<p><strong>Email:</strong> info@medicare.com</p>
+<p><strong>Hours:</strong> 24/7 Open</p>
+</div>
+
+<div class="map">
+Google Map Placeholder
+</div>
+
+</div>
+</section>
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3>MediCare+</h3>
+<p>Providing trusted healthcare solutions.</p>
+</div>
+
+<div>
+<h3>Quick Links</h3>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+</ul>
+</div>
+
+<div>
+<h3>Services</h3>
+<ul>
+<li>Cardiology</li>
+<li>Neurology</li>
+<li>Pediatrics</li>
+</ul>
+</div>
+
+<div>
+<h3>Newsletter</h3>
+<input type="email" placeholder="Your Email">
+</div>
+
+</div>
+
+<div class="copy">
+© 2026 MediCare Hospital. All Rights Reserved.
+</div>
+
+</footer>
+
+</body>
+</html>
