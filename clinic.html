@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MediCare Clinic - Tailwind CSS</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+<header class="sticky top-0 bg-white shadow z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold">+</div>
+      <div>
+        <h1 class="text-xl font-bold text-blue-600">MediCare</h1>
+        <p class="text-xs text-gray-500">Clinic & Hospital</p>
+      </div>
+    </div>
+    <nav>
+      <ul class="flex gap-4 text-sm font-medium">
+        <li><a href="#" class="hover:text-blue-600">Home</a></li>
+        <li><a href="#" class="hover:text-blue-600">About</a></li>
+        <li><a href="#" class="hover:text-blue-600">Services</a></li>
+        <li><a href="#" class="hover:text-blue-600">Doctors</a></li>
+        <li><a href="#" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="bg-gradient-to-r from-blue-900 via-blue-700 to-sky-500 text-white py-24">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <p class="uppercase tracking-widest text-sm">Trusted Healthcare Since 2005</p>
+      <h2 class="text-5xl font-bold mt-4">Your Health, <span class="text-sky-300">Our Priority</span></h2>
+      <p class="mt-6 text-lg">Advanced medical care with compassion and excellence.</p>
+      <div class="mt-8 flex gap-4">
+        <button class="bg-white text-blue-700 px-6 py-3 rounded-full font-semibold">Book Appointment</button>
+        <button class="border border-white px-6 py-3 rounded-full">Contact Us</button>
+      </div>
+    </div>
+    <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20">
+      <h3 class="text-2xl font-bold mb-4">24/7 Emergency Care</h3>
+      <p>Fully staffed emergency unit and ambulance services.</p>
+    </div>
+  </div>
+</section>
+
+<section class="py-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-12">Our Services</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-bold text-xl mb-3">General Checkup</h3>
+        <p>Routine health examinations and consultation.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-bold text-xl mb-3">Emergency Care</h3>
+        <p>24/7 trauma and emergency support.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-bold text-xl mb-3">Dental Care</h3>
+        <p>Complete oral health solutions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-slate-900 text-white py-8 text-center">
+  <p>© 2026 MediCare Clinic. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
